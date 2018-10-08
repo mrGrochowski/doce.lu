@@ -1,17 +1,20 @@
 <template>
   <div id="app">
-    <img width="25%" src="./assets/logo.png">
-    <HelloWorld/>
+   
+    <filterTabeli></filterTabeli>
+    <Tabela/>
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld";
+import Tabela from "./components/Tabela"
+import FilterTabeli from "./components/Filter"
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    FilterTabeli,
+    Tabela,
   }
 };
 </script>
