@@ -3,9 +3,9 @@
   
   <h1>Tabela</h1>
 
-  <ul>
-    <wiersz v-for="i in 3" :key='i' >
-    <template slot="group-slot" v-if="i == 2 "> Coś jeszcze</template>
+  <ul> 
+    <wiersz v-for="key in 3" :keys='key' >
+      <template slot="to-group-li" v-if="key in {2:'',1:''} "> <wiersz v-for="key in 3" :keys='key'></wiersz></template>
     </wiersz>
   </ul>
 

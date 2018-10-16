@@ -1,7 +1,6 @@
 <template>
-  <ul class="group"> <!--:id="this._uid" -->
-    <li>Persistent</li>
-    <li><slot name="group-li"></slot></li>
+  <ul class="group" :id="'group__'+_uid"> <!--:id="this._uid" -->
+    <slot name="group-li"></slot>
   </ul>
 </template>
 <script>
