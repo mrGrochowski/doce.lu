@@ -15,6 +15,10 @@ export default {
   components: {
     FilterTabeli,
     Tabela,
+  },
+  mounted(){
+    console.log(Wiersz);
+
   }
 };
 </script>
